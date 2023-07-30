@@ -1,5 +1,5 @@
 import './App.css';
-import { Avatar, Button, TextField } from '@mui/material';
+import { Avatar, Button, Link, TextField } from '@mui/material';
 import { useState } from 'react';
 
 function App() {
@@ -28,7 +28,10 @@ function App() {
   src={user?.avatar_url}
   sx={{ width: 200, height: 200 }}
 />
-
+<Link href={user?.blog} variant="body2">
+  Linkedin
+</Link>
+{/* <Textarea>Followers : {user?.followers}</Text> */}
       
 
       <h1>{user?.bio}</h1>
