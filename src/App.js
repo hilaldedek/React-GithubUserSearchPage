@@ -39,12 +39,7 @@ function App() {
   sx={{ width: 200, height: 200 }}
 />
       }
-      {/* {
-        user.blog &&<Link href={user?.blog} target="_blank">
-  Linkedin
-</Link>
-      } */}
-      <h1 style={{textShadow:" 6px 6px 0px rgba(0,0,0,0.8)"}}>{user.bio}</h1 >
+      <h1 style={{textShadow:" 6px 6px 0px rgba(0,0,0,0.8)",margin:24}}>{user.bio}</h1 >
      { user.followers && <h3 style={{textShadow:" 6px 6px 0px rgba(0,0,0,0.8)"}}>{user.followers} followers</h3>}
       {user.following && <h3 style={{textShadow:" 6px 6px 0px rgba(0,0,0,0.8)"}}>{user.following} following</h3>}
 
